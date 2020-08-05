@@ -9,6 +9,9 @@ The latest [actions on SDK](https://developers.google.com/assistant/conversation
 
 You can use that library to create your own voice bots. The documentation can be found [here](https://developers.google.com/assistant).
 
+_Note: you might not see much activity on this repository, simply because Google seems to not update [their schema](https://raw.githubusercontent.com/actions-on-google/assistant-conversation-schema) very often. It's active, don't worry!_
+
+
 ## What
 
 This repository simply takes the latest version of the [JSON Schema](http://json-schema.org/) 6 file with types to fulfill Actions SDK handlers for the Google Assistant and generates POJOs from it. You can find the file [here](https://github.com/actions-on-google/assistant-conversation-schema/blob/master/conversation.json).
