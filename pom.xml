@@ -49,4 +49,12 @@
             <version>2.5.4</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/jlengrand/assistant-conversation-java</url>
+        </repository>
+    </distributionManagement>
 </project>
