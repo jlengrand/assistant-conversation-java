@@ -1,0 +1,28 @@
+# Simply checks we can compile and create the jar without issue
+
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 8
+      - name: Install all and build with Maven
+        run: |
+          mvn package
+      - name: package
+        run: mkdir staging && cp target/*.jar staging
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Package
+          path: staging
